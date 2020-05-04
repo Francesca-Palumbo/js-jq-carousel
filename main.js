@@ -61,15 +61,15 @@ $(".prev").click(function() {
     // console.log(img_successiva);
 
     // recupero il pallino precedente
-    var pallino_successivo = pallino_corrente.next(".fa-circle");
+    var pallino_precedente = pallino_corrente.prev(".fa-circle");
 
     // verifico che esista un'immagine img_precedente
     if(img_precedente.length != 0){
         // c'è un'immagine precedente
         // metto la classe active all'immagine precedente
-        img_successiva.addClass("active");
+        img_precedente.addClass("active");
         // metto la classe active al pallino pallino_precedente
-        pallino_successivo.addClass("active");
+        pallino_precedente.addClass("active");
     }else {
         // non c'è un'immagine precedente e faccio ripartire dall'ultima img
         img_precedente = $("img:last-of-type");
