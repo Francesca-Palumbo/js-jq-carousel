@@ -80,12 +80,12 @@ $(".prev").click(function() {
     }
 })
 
-// $( document.body )
-  .click(function() {
-    $( this ).append( $( "<img>" ) );
-    var n = $( "img" ).size();
-    $( "span" ).text( "There are " + n + " imgs. Click to add more." );
-  })
-
-  // Trigger the click to start
-  .click();
+// // $( document.body )
+//   .click(function() {
+//     $( "active" ).append( $( "<img>" ) );
+//     var n = $( "img" ).size();
+//     $( "active" ).text( "There are " + n + " imgs. Click to add more." );
+//   })
+//
+//   // Trigger the click to start
+//   .click();
