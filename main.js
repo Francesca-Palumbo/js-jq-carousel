@@ -79,3 +79,13 @@ $(".prev").click(function() {
         $(".fa-circle:last-child").addClass("active");
     }
 })
+
+// $( document.body )
+  .click(function() {
+    $( this ).append( $( "<img>" ) );
+    var n = $( "img" ).size();
+    $( "span" ).text( "There are " + n + " imgs. Click to add more." );
+  })
+
+  // Trigger the click to start
+  .click();
